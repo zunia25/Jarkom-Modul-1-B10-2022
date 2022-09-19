@@ -12,10 +12,10 @@
 
 Pertama, akses terlebih dahulu website http://monta.if.its.ac.id, kemudian lakukan display filter menggunakan `tcp contains "monta.if.its.ac.id"`
 
-![image](https://user-images.githubusercontent.com/67154280/191023989-993b48fa-a66c-4680-8ebe-7b872161dd02.png)
+![image](https://user-images.githubusercontent.com/67154280/191028336-49bb3a43-4e3c-4b14-b3ed-ed307957eced.png)
 Setelah itu, lakukan `Follow > TCP Stream`
 
-![image](https://user-images.githubusercontent.com/67154280/191024424-7424949d-5cdb-4ae2-8044-e904b439ceb9.png)
+![image](https://user-images.githubusercontent.com/67154280/191028414-aa5d941a-a1a2-4ce4-ade8-45463fe8bdc4.png)
 Diperoleh webserver yang digunakan pada "monta.if.its.ac.id" dari informasi yang didapatkan yaitu `nginx/1.10.3`
 
 ## 2
@@ -24,8 +24,16 @@ Diperoleh webserver yang digunakan pada "monta.if.its.ac.id" dari informasi yang
 ## 3
 > Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!
 
+Kasus soal ini, kita lakukan dengan capture filter `tcp.dstport == 80` dan akan mendapatkan hasil sebagai berikut
+
+![image](https://user-images.githubusercontent.com/67154280/191031218-18699a9f-1798-4935-b4a8-ec212a29cbfb.png)
+
 ## 4
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21!
+
+Kasus soal ini, kita lakukan dengan display filter `tcp.srcport == 21` dan akan mendapatkan hasil sebagai berikut
+
+![image](https://user-images.githubusercontent.com/67154280/191030656-a4fa7858-c8c8-4d4a-a0ad-36d5b0181df7.png)
 
 ## 5
 > Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
