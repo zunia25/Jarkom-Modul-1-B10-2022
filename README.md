@@ -10,6 +10,13 @@
 ## 1
 > Sebutkan web server yang digunakan pada "monta.if.its.ac.id"! 
 
+Pertama, akses terlebih dahulu website http://monta.if.its.ac.id, kemudian lakukan display filter menggunakan `tcp contains "monta.if.its.ac.id"`
+
+![image](https://user-images.githubusercontent.com/67154280/191023989-993b48fa-a66c-4680-8ebe-7b872161dd02.png)
+Setelah itu, lakukan `Follow > TCP Stream`
+
+![image](https://user-images.githubusercontent.com/67154280/191024424-7424949d-5cdb-4ae2-8044-e904b439ceb9.png)
+Diperoleh webserver yang digunakan pada "monta.if.its.ac.id" dari informasi yang didapatkan yaitu `nginx/1.10.3`
 
 ## 2
 > Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ?
